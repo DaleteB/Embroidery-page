@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embroidery page</title>
+    <style>
+      h1 {
+        color: #f8abc8;
+        text-align: center;
+        font-size: 65px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: lighter;
+      }
+
+      .fullBody {
+        border: 1px;
+        border-radius: 10px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(
+          180.3deg,
+          rgb(214, 224, 255) 37.2%,
+          rgb(254, 168, 168) 137.3%
+        );
+        line-height: 1.5;
+        margin: 10 auto;
+        padding: 10px;
+      }
+      .history {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 60%;
+      }
+      .learn {
+        text-decoration: none;
+        font-style: italic;
+      }
+      .boyfriends {
+        border: 1px;
+        border-radius: 4px;
+        margin-right: 50px;
+      }
+      .harryPotter {
+        border: 1px;
+        border-radius: 4px;
+        margin-left: 50px;
+      }
+      .quarantinePage {
+        text-decoration: none;
+      }
+      button {
+        background: #e9c4d4;
+        border: 2px solid;
+        border-color: #e9c4d4;
+        border-radius: 50px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        color: white;
+        display: block;
+        font-size: 18px;
+        margin: 20px auto;
+        padding: 15px 20px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: white;
+        color: #e7bace;
+        cursor: pointer;
+      }
+      .coded {
+        font-size: 13px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fullBody">
+      <h1>🧵 Embroidery 🧵</h1>
+      <hr />
+      <h2>
+        <em> Making art with needles and threads. </em>
+      </h2>
+      <hr />
+      <p class="history">
+        Embroidery is the craft of decorating fabric or other materials using a
+        needle to apply thread or yarn. Embroidery may also incorporate other
+        materials such as pearls, beads, quills, and sequins. In modern days,
+        embroidery is usually seen on caps, hats, coats, overlays, blankets,
+        dress shirts, denim, dresses, stockings, and golf shirts. Embroidery is
+        available with a wide variety of thread or yarn colour.
+        <a
+          class="learn"
+          href="https://en.wikipedia.org/wiki/Embroidery"
+          target="_blank"
+        >
+          Learn more 📚
+        </a>
+      </p>
+
+      <br />
+
+      <img
+        class="boyfriends"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/126/original/camila.jpg?1642527748"
+        alt="Boyfriends"
+        width="250px"
+      />
+      <img
+        class="harryPotter"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/125/original/harrypotter.jpg?1642527740"
+        alt="Harry potter"
+        width="262px"
+      />
+      <p class="instagram">
+        During quarantine I found at the embroidery a way to distract myself.
+        <br />
+        I gifted my friends with unique embroideries. <br />
+        You can check out my instagram page
+        <a
+          class="quarantinePage"
+          href="https://www.instagram.com/quarantinestitch/?hl=en"
+          target="_blank"
+          >👉🏻 Quarantine Stitch.</a
+        >
+      </p>
+      <p class="signUp">
+        Sign up to receive our tips and new techniques about embroidery.
+      </p>
+      <button>Sign here</button>
+      <p class="coded">This page was built by Dalete Pokrywiesky</p>
+      <script>
+        function signUp() {
+          let name = prompt("What is your name?");
+          let email = prompt("What is your email?");
+
+          alert(
+            "Thank you " + name + "! You'll receive the newsletter soon. 😊"
+          );
+        }
+
+        let button = document.querySelector("button");
+        button.addEventListener("click", signUp);
+      </script>
+    </div>
+  </body>
+</html>
